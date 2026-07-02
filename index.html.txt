@@ -666,25 +666,27 @@ a { color: inherit; text-decoration: none; }
     </div>
     <div class="hero-visual">
       <div class="hero-doc">
-        <div class="hero-doc-title">📄 Rapport de conformité DUERP</div>
+        <div class="hero-doc-title">📄 Analyse de conformité DUERP</div>
         <div class="hero-doc-item ok">
           <span class="hero-doc-icon">✅</span>Unités de travail identifiées
         </div>
         <div class="hero-doc-item ok">
-          <span class="hero-doc-icon">✅</span>Risques évalués et cotés
+          <span class="hero-doc-icon">✅</span>Risques évalués et hiérarchisés
         </div>
         <div class="hero-doc-item warn">
-          <span class="hero-doc-icon">⚠️</span>Plan d'actions à compléter
+          <span class="hero-doc-icon">⚠️</span>Points d'amélioration identifiés
         </div>
         <div class="hero-doc-item crit">
-          <span class="hero-doc-icon">❌</span>Mise à jour annuelle manquante
+          <span class="hero-doc-icon">⚠️</span>Mise à jour recommandée
         </div>
       </div>
       <div class="hero-badge-delivered">
         <span style="font-size:24px;">🚀</span>
         <div>
-          <div style="font-size:12px;opacity:.8;font-weight:600;">DUERP livré en</div>
-          <div>48 heures chrono</div>
+          <div style="font-size:12px;opacity:.8;font-weight:600;">DUERP personnalisée </div>
+          <div>sous 48 h*</div>
+<p class="duerp-note">
+*Sous réserve de la réception des informations nécessaires.</p>
         </div>
       </div>
     </div>
