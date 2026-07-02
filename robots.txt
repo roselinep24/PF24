@@ -1,0 +1,11 @@
+# robots.txt — PF24 QSE
+# https://pf24qse.fr
+
+User-agent: *
+Allow: /
+
+# Pages légales : autorisées mais non indexées (via meta robots noindex dans la page)
+Disallow:
+
+# Sitemap
+Sitemap: https://pf24qse.fr/sitemap.xml
