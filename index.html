@@ -1,0 +1,2085 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>PF24 QSE — Création et mise à jour de DUERP pour TPE, PME et artisans</title>
+  <meta name="description" content="PF24 QSE accompagne les TPE, PME, artisans, commerçants et associations employeuses dans leur démarche DUERP : évaluation des risques, plan d’actions de prévention et mise à jour du document unique.">
+  <meta name="keywords" content="DUERP, document unique, évaluation des risques professionnels, DUERP obligatoire, DUERP TPE, DUERP PME, DUERP artisan, DUERP restaurant, DUERP commerce, mise à jour DUERP, création DUERP, prévention des risques professionnels">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://pf24qse.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PF24 QSE — Création et mise à jour de DUERP">
+  <meta property="og:description" content="Diagnostic gratuit en 3 minutes. Accompagnement DUERP pour TPE, PME, artisans, commerçants et associations employeuses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pf24qse.fr/">
+  <meta property="og:site_name" content="PF24 QSE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PF24 QSE — Création et mise à jour de DUERP">
+  <meta name="twitter:description" content="Diagnostic gratuit en 3 minutes. Accompagnement DUERP pour TPE, PME, artisans, commerçants et associations employeuses.">
+
+  <!-- =====================================================
+       GOOGLE SEARCH CONSOLE — Décommentez et remplacez
+       ===================================================== -->
+  <!-- REMPLACER_ICI_PAR_CODE_GOOGLE_SEARCH_CONSOLE -->
+  <!-- <meta name="google-site-verification" content="VOTRE_CODE_ICI"> -->
+
+  <!-- =====================================================
+       GOOGLE ANALYTICS 4 — Décommentez et remplacez G-XXXXXXXXXX
+       ===================================================== -->
+  <!-- REMPLACER_ICI_PAR_ID_GA4 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Données structurées JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "PF24 QSE",
+    "url": "https://pf24qse.fr",
+    "description": "Création et mise à jour de DUERP pour TPE, PME, artisans, commerçants et associations employeuses. Prévention des risques professionnels.",
+    "email": "contact@pf24qse.fr",
+    "areaServed": {"@type": "Country", "name": "France"},
+    "serviceType": "Conseil en prévention des risques professionnels",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Prestations QSE",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Création de votre Document Unique"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Révision et mise à jour du Document Unique"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Accompagnement QSE"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Audit prévention"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Accompagnement prévention"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS & RESET
+   ============================================================ */
+:root {
+  --navy:    #0B1B33;
+  --navy-l:  #16294A;
+  --navy-xl: #1E3A66;
+  --white:   #FFFFFF;
+  --grey-bg: #F4F6F9;
+  --grey-l:  #E8ECF2;
+  --grey-t:  #5B6472;
+  --grey-m:  #8A95A3;
+  --green:   #1E9E63;
+  --green-l: #E5F6ED;
+  --orange:  #E8821C;
+  --orange-l:#FFF0E0;
+  --red:     #D63B3B;
+  --red-l:   #FDE8E8;
+
+  --r: 14px;
+  --r-sm: 9px;
+  --shadow: 0 4px 20px rgba(11,27,51,0.09);
+  --shadow-lg: 0 8px 36px rgba(11,27,51,0.14);
+  --font: 'Inter', -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.container-sm { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 28px; border-radius: 10px; font-size: 15px; font-weight: 700;
+  border: none; cursor: pointer; transition: transform .1s, box-shadow .15s, opacity .15s;
+  font-family: var(--font);
+}
+.btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+.btn:active { transform: scale(.98); }
+.btn-primary { background: var(--navy); color: #fff; }
+.btn-primary:hover { background: var(--navy-l); }
+.btn-green { background: var(--green); color: #fff; }
+.btn-green:hover { background: #178a55; }
+.btn-whatsapp { background: #25D366; color: #fff; }
+.btn-whatsapp:hover { background: #1fb85a; color: #fff; }
+.btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+.btn-white { background: #fff; color: var(--navy); }
+.btn-white:hover { background: var(--grey-bg); }
+.btn-lg { padding: 17px 34px; font-size: 16px; border-radius: 11px; }
+
+.badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 700;
+}
+.badge-green { background: var(--green-l); color: var(--green); }
+.badge-orange { background: var(--orange-l); color: var(--orange); }
+.badge-red { background: var(--red-l); color: var(--red); }
+.badge-navy { background: var(--navy); color: #fff; }
+
+.tag {
+  display: inline-block; padding: 4px 12px; border-radius: 999px;
+  font-size: 11.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+}
+.tag-green { background: var(--green-l); color: var(--green); }
+.tag-navy { background: rgba(11,27,51,.08); color: var(--navy-l); }
+
+.section { padding: 90px 0; }
+.section-sm { padding: 60px 0; }
+.section-alt { background: var(--grey-bg); }
+.section-dark { background: var(--navy); color: #fff; }
+
+.section-label {
+  font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--green); margin-bottom: 14px; display: block;
+}
+.section-title {
+  font-size: clamp(26px, 4vw, 42px); font-weight: 900; line-height: 1.15;
+  margin-bottom: 18px;
+}
+.section-sub {
+  font-size: 17px; color: var(--grey-t); line-height: 1.7; max-width: 620px;
+}
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+.card {
+  background: var(--white); border-radius: var(--r); border: 1.5px solid var(--grey-l);
+  padding: 28px; box-shadow: var(--shadow);
+}
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,.95); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--grey-l); padding: 14px 0;
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: 1100px; margin: 0 auto; padding: 0 20px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 20px;
+}
+.nav-logo .logo-mark {
+  width: 38px; height: 38px; background: var(--navy); border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 13px; font-weight: 900;
+}
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links a { font-size: 14.5px; font-weight: 600; color: var(--grey-t); transition: color .15s; }
+.nav-links a:hover { color: var(--navy); }
+.nav-cta { display: flex; align-items: center; gap: 10px; }
+.nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
+.nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); margin: 4px 0; border-radius: 2px; transition: .2s; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  background: linear-gradient(155deg, var(--navy) 0%, var(--navy-xl) 60%, #1a3d6b 100%);
+  color: #fff; padding: 100px 0 90px; overflow: hidden; position: relative;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1.5' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E") repeat;
+  pointer-events: none;
+}
+.hero-inner {
+  position: relative; max-width: 1100px; margin: 0 auto; padding: 0 20px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.hero-pre {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(30,158,99,.18); color: #6FDFAC; padding: 7px 14px;
+  border-radius: 999px; font-size: 12.5px; font-weight: 700; margin-bottom: 24px;
+  border: 1px solid rgba(30,158,99,.3);
+}
+.hero h1 {
+  font-size: clamp(30px, 4.5vw, 52px); font-weight: 900; line-height: 1.1;
+  margin-bottom: 20px; letter-spacing: -.02em;
+}
+.hero h1 .accent { color: #6FDFAC; }
+.hero-sub {
+  font-size: 17px; opacity: .82; line-height: 1.75; margin-bottom: 36px; max-width: 500px;
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
+.hero-reassurance {
+  display: flex; flex-wrap: wrap; gap: 18px;
+}
+.hero-pill {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 13px; opacity: .8;
+}
+.hero-pill::before { content: '✓'; font-weight: 900; color: #6FDFAC; }
+
+/* Hero visual — conformity graphic */
+.hero-visual {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+}
+.hero-doc {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px; padding: 28px 24px; width: 100%; max-width: 340px;
+  backdrop-filter: blur(6px);
+}
+.hero-doc-title {
+  font-size: 13px; font-weight: 700; opacity: .6; margin-bottom: 16px;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.hero-doc-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px; border-radius: 9px; margin-bottom: 8px;
+  font-size: 13.5px; font-weight: 600;
+}
+.hero-doc-item.ok { background: rgba(30,158,99,.15); color: #6FDFAC; }
+.hero-doc-item.warn { background: rgba(232,130,28,.15); color: #FAB866; }
+.hero-doc-item.crit { background: rgba(214,59,59,.15); color: #F48080; }
+.hero-doc-icon { font-size: 16px; flex-shrink: 0; }
+.hero-badge-delivered {
+  background: var(--green); color: #fff; border-radius: 12px;
+  padding: 14px 22px; font-weight: 800; font-size: 14.5px;
+  display: flex; align-items: center; gap: 10px; width: 100%; max-width: 340px;
+  box-shadow: 0 6px 24px rgba(30,158,99,.35);
+}
+
+/* ============================================================
+   PROBLEM SECTION
+   ============================================================ */
+.problem-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px;
+}
+.problem-card {
+  background: var(--white); border: 1.5px solid var(--grey-l); border-radius: var(--r);
+  padding: 24px; transition: box-shadow .15s; position: relative; overflow: hidden;
+}
+.problem-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--orange);
+}
+.problem-icon { font-size: 28px; margin-bottom: 14px; }
+.problem-card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 8px; }
+.problem-card p { font-size: 14px; color: var(--grey-t); line-height: 1.6; }
+
+/* ============================================================
+   SOLUTION SECTION
+   ============================================================ */
+.solution-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 48px;
+}
+.solution-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.solution-list li {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px 18px; background: var(--grey-bg); border-radius: var(--r-sm);
+}
+.solution-list .check {
+  width: 28px; height: 28px; background: var(--green); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 13px; flex-shrink: 0; margin-top: 1px;
+}
+.solution-list .li-text strong { display: block; font-size: 14.5px; font-weight: 700; }
+.solution-list .li-text span { font-size: 13px; color: var(--grey-t); }
+
+.solution-stat-box {
+  background: var(--navy); color: #fff; border-radius: var(--r);
+  padding: 36px 32px; box-shadow: var(--shadow-lg);
+}
+.stat-row { display: flex; flex-direction: column; gap: 28px; }
+.stat-item { }
+.stat-number { font-size: 42px; font-weight: 900; color: #6FDFAC; line-height: 1; }
+.stat-label { font-size: 14px; opacity: .75; margin-top: 4px; }
+.stat-div { height: 1px; background: rgba(255,255,255,.1); }
+
+/* ============================================================
+   DIAGNOSTIC SECTION
+   ============================================================ */
+.diag-wrapper {
+  max-width: 720px; margin: 48px auto 0; background: var(--white);
+  border-radius: 20px; box-shadow: var(--shadow-lg); border: 1.5px solid var(--grey-l);
+  overflow: hidden;
+}
+.diag-header {
+  background: var(--navy); color: #fff; padding: 28px 36px;
+}
+.diag-header h3 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+.diag-header p { font-size: 14px; opacity: .75; }
+
+/* Progress bar */
+.diag-progress { padding: 20px 36px 0; }
+.progress-label { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--grey-t); font-weight: 600; margin-bottom: 8px; }
+.progress-track { height: 7px; background: var(--grey-l); border-radius: 99px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--green), #2BC77A); border-radius: 99px; transition: width .4s cubic-bezier(.4,0,.2,1); width: 0%; }
+
+.diag-body { padding: 32px 36px; }
+.diag-screen { display: none; }
+.diag-screen.active { display: block; animation: fadeIn .25s ease; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Start screen */
+.diag-start { text-align: center; padding: 20px 0; }
+.diag-start .start-icon { font-size: 56px; margin-bottom: 20px; }
+.diag-start h3 { font-size: 24px; font-weight: 900; margin-bottom: 10px; }
+.diag-start p { font-size: 15px; color: var(--grey-t); margin-bottom: 28px; line-height: 1.7; }
+.diag-start .start-pills { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+.diag-start .start-pill { background: var(--grey-bg); border-radius: 999px; padding: 7px 16px; font-size: 13px; font-weight: 600; }
+
+/* Question */
+.diag-q-label { font-size: 12px; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 10px; }
+.diag-q-text { font-size: 18px; font-weight: 800; margin-bottom: 22px; line-height: 1.4; }
+.diag-q-hint { font-size: 13px; color: var(--grey-t); margin-bottom: 16px; font-style: italic; }
+
+/* Options grid */
+.opt-grid { display: grid; gap: 10px; }
+.opt-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.opt-item {
+  border: 2px solid var(--grey-l); border-radius: 11px; padding: 13px 16px;
+  cursor: pointer; font-size: 14px; font-weight: 600; color: var(--navy);
+  transition: all .15s; display: flex; align-items: center; gap: 10px;
+  background: var(--white);
+}
+.opt-item:hover { border-color: var(--navy); background: rgba(11,27,51,.03); }
+.opt-item.selected { border-color: var(--green); background: var(--green-l); color: var(--navy); }
+.opt-item .opt-dot {
+  width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--grey-l);
+  flex-shrink: 0; transition: .15s; display: flex; align-items: center; justify-content: center;
+}
+.opt-item.selected .opt-dot { background: var(--green); border-color: var(--green); }
+.opt-item.selected .opt-dot::after { content: '✓'; color: #fff; font-size: 10px; font-weight: 900; }
+.opt-item.multi .opt-dot { border-radius: 4px; }
+
+/* Nav buttons */
+.diag-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--grey-l); }
+.btn-diag-back { background: none; border: none; color: var(--grey-t); font-size: 14px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px; font-family: var(--font); }
+.btn-diag-back:hover { color: var(--navy); }
+
+/* Contact form in diagnostic */
+.diag-form { display: flex; flex-direction: column; gap: 14px; }
+.diag-input {
+  padding: 13px 16px; border: 2px solid var(--grey-l); border-radius: 10px;
+  font-size: 15px; font-family: var(--font); color: var(--navy);
+  transition: border-color .15s; outline: none;
+}
+.diag-input:focus { border-color: var(--navy); }
+.diag-input.optional::placeholder { color: var(--grey-m); }
+
+/* Result screen */
+.result-screen { text-align: center; }
+.score-ring { position: relative; width: 160px; height: 160px; margin: 0 auto 24px; }
+.score-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.score-ring-bg { fill: none; stroke: var(--grey-l); stroke-width: 10; }
+.score-ring-fill { fill: none; stroke-width: 10; stroke-linecap: round; transition: stroke-dashoffset 1.2s cubic-bezier(.4,0,.2,1); }
+.score-ring-text {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.score-ring-text .score-num { font-size: 38px; font-weight: 900; line-height: 1; }
+.score-ring-text .score-max { font-size: 12px; color: var(--grey-t); font-weight: 600; }
+
+.result-level { font-size: 17px; font-weight: 800; margin-bottom: 6px; }
+.result-sub { font-size: 14px; color: var(--grey-t); margin-bottom: 24px; }
+
+.result-prios {
+  text-align: left; background: var(--grey-bg); border-radius: var(--r);
+  padding: 20px 22px; margin-bottom: 24px;
+}
+.result-prios h4 { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--grey-t); margin-bottom: 14px; }
+.result-prio-item {
+  display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px;
+  font-size: 14px; font-weight: 600;
+}
+.result-prio-item::before { content: '→'; color: var(--orange); font-weight: 900; flex-shrink: 0; }
+
+.result-estimate {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--orange-l); border-radius: 10px; padding: 16px 18px;
+  margin-bottom: 24px; text-align: left;
+}
+.result-estimate .re-label { font-size: 12.5px; color: var(--grey-t); font-weight: 600; }
+.result-estimate .re-val { font-size: 16px; font-weight: 800; }
+
+.result-btns { display: flex; flex-direction: column; gap: 10px; }
+
+/* ============================================================
+   OFFRES SECTION
+   ============================================================ */
+.offres-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.offre-card {
+  background: var(--white); border: 1.5px solid var(--grey-l); border-radius: var(--r);
+  padding: 32px 28px; box-shadow: var(--shadow); position: relative;
+  display: flex; flex-direction: column;
+}
+.offre-card.featured {
+  border-color: var(--navy); box-shadow: var(--shadow-lg);
+}
+.offre-badge {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--navy); color: #fff; padding: 5px 16px; border-radius: 999px;
+  font-size: 11.5px; font-weight: 800; white-space: nowrap;
+}
+.offre-icon { font-size: 36px; margin-bottom: 16px; }
+.offre-name { font-size: 20px; font-weight: 900; margin-bottom: 8px; }
+.offre-desc { font-size: 14px; color: var(--grey-t); margin-bottom: 22px; line-height: 1.6; }
+.offre-includes { list-style: none; display: flex; flex-direction: column; gap: 9px; flex: 1; margin-bottom: 24px; }
+.offre-includes li { display: flex; align-items: flex-start; gap: 9px; font-size: 14px; }
+.offre-includes li::before { content: '✓'; color: var(--green); font-weight: 900; flex-shrink: 0; margin-top: 1px; }
+
+/* ============================================================
+   MÉTHODE SECTION
+   ============================================================ */
+.methode-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; position: relative; }
+.methode-steps::before {
+  content: ''; position: absolute; top: 42px; left: 10%; right: 10%; height: 2px;
+  background: linear-gradient(90deg, var(--green-l), var(--green), var(--green-l));
+  z-index: 0;
+}
+.methode-step { text-align: center; position: relative; z-index: 1; }
+.step-num {
+  width: 56px; height: 56px; background: var(--navy); color: #fff;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 900; margin: 0 auto 18px;
+  box-shadow: 0 4px 16px rgba(11,27,51,.25); border: 4px solid #fff;
+}
+.step-icon { font-size: 22px; position: absolute; top: 16px; left: 50%; transform: translateX(-50%); opacity: .15; pointer-events: none; }
+.methode-step h3 { font-size: 15px; font-weight: 800; margin-bottom: 8px; }
+.methode-step p { font-size: 13.5px; color: var(--grey-t); line-height: 1.6; }
+
+/* ============================================================
+   SECTEURS SECTION
+   ============================================================ */
+.secteurs-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 48px; }
+.secteur-card {
+  background: var(--white); border: 1.5px solid var(--grey-l); border-radius: var(--r);
+  padding: 22px 16px; text-align: center; box-shadow: var(--shadow);
+  transition: transform .15s, box-shadow .15s;
+  cursor: default;
+}
+.secteur-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.secteur-icon { font-size: 30px; margin-bottom: 10px; }
+.secteur-name { font-size: 13px; font-weight: 700; }
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.faq-list { max-width: 760px; margin: 48px auto 0; display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  border: 1.5px solid var(--grey-l); border-radius: var(--r);
+  overflow: hidden; background: var(--white);
+}
+.faq-q {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding: 20px 22px; cursor: pointer; font-size: 15px; font-weight: 700;
+  transition: background .15s;
+}
+.faq-q:hover { background: var(--grey-bg); }
+.faq-arrow { font-size: 18px; color: var(--grey-t); transition: transform .25s; flex-shrink: 0; }
+.faq-item.open .faq-arrow { transform: rotate(180deg); }
+.faq-a {
+  max-height: 0; overflow: hidden; transition: max-height .3s ease;
+  font-size: 14.5px; color: var(--grey-t); line-height: 1.7;
+}
+.faq-a-inner { padding: 4px 22px 20px; }
+.faq-item.open .faq-a { max-height: 300px; }
+
+/* ============================================================
+   CONTACT SECTION
+   ============================================================ */
+.contact-wrapper {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; margin-top: 48px;
+}
+.contact-info h3 { font-size: 22px; font-weight: 900; margin-bottom: 14px; }
+.contact-info p { font-size: 15px; color: var(--grey-t); line-height: 1.7; margin-bottom: 24px; }
+.contact-item { display: flex; align-items: center; gap: 12px; font-size: 14.5px; margin-bottom: 14px; font-weight: 600; }
+.contact-item-icon { font-size: 20px; }
+
+.contact-form { display: flex; flex-direction: column; gap: 14px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.input, .textarea, .select-input {
+  padding: 13px 16px; border: 2px solid var(--grey-l); border-radius: 10px;
+  font-size: 15px; font-family: var(--font); color: var(--navy); outline: none;
+  transition: border-color .15s; background: var(--white); width: 100%;
+}
+.input:focus, .textarea:focus { border-color: var(--navy); }
+.textarea { resize: vertical; min-height: 110px; }
+.form-success {
+  background: var(--green-l); border: 1.5px solid var(--green); border-radius: 10px;
+  padding: 16px 18px; color: var(--green); font-weight: 700; font-size: 15px; display: none;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--navy); color: #fff; padding: 60px 0 32px;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 48px;
+}
+.footer-logo { font-size: 22px; font-weight: 900; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.footer-logo .logo-mark { background: #fff; color: var(--navy); }
+.footer-desc { font-size: 14px; opacity: .65; line-height: 1.7; max-width: 340px; }
+.footer-col h4 { font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; opacity: .5; margin-bottom: 16px; }
+.footer-col a { display: block; font-size: 14px; opacity: .7; margin-bottom: 9px; transition: opacity .15s; }
+.footer-col a:hover { opacity: 1; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-bottom p { font-size: 13px; opacity: .5; }
+.footer-legal { display: flex; gap: 20px; }
+.footer-legal a { font-size: 13px; opacity: .5; transition: opacity .15s; }
+.footer-legal a:hover { opacity: 1; }
+
+
+/* ============================================================
+   WHATSAPP FLOATING BUTTON
+   ============================================================ */
+.whatsapp-float {
+  position: fixed; right: 18px; bottom: 92px; z-index: 120;
+  background: #25D366; color: #fff; border-radius: 999px;
+  padding: 13px 18px; font-size: 14px; font-weight: 800;
+  display: inline-flex; align-items: center; gap: 8px;
+  box-shadow: 0 8px 28px rgba(37,211,102,.35);
+  transition: transform .15s, box-shadow .15s, opacity .15s;
+}
+.whatsapp-float:hover { transform: translateY(-2px); box-shadow: 0 10px 34px rgba(37,211,102,.45); }
+.whatsapp-float .wa-dot { width: 9px; height: 9px; border-radius: 50%; background:#fff; opacity:.9; }
+@media (max-width: 560px) {
+  .whatsapp-float { right: 14px; bottom: 86px; padding: 12px 14px; font-size: 13px; }
+  .whatsapp-float span.label { display:none; }
+}
+
+/* ============================================================
+   STICKY CTA BAR (mobile)
+   ============================================================ */
+.sticky-bar {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0;
+  background: #fff; border-top: 1px solid var(--grey-l); padding: 12px 16px;
+  z-index: 99; box-shadow: 0 -4px 20px rgba(11,27,51,.1);
+  gap: 10px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+  .grid-2, .grid-3, .grid-4, .solution-grid, .hero-inner,
+  .contact-wrapper, .footer-grid { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .hero { padding: 70px 0 60px; }
+  .section { padding: 64px 0; }
+  .problem-grid, .offres-grid { grid-template-columns: 1fr; }
+  .methode-steps { grid-template-columns: 1fr 1fr; }
+  .methode-steps::before { display: none; }
+  .secteurs-grid { grid-template-columns: repeat(3, 1fr); }
+  .opt-grid.cols-2 { grid-template-columns: 1fr; }
+  .diag-body { padding: 24px 20px; }
+  .diag-header, .diag-progress { padding-left: 20px; padding-right: 20px; }
+  .form-row { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .nav-hamburger { display: block; }
+  .sticky-bar { display: flex; }
+  body { padding-bottom: 70px; }
+}
+@media (max-width: 560px) {
+  .hero h1 { font-size: 27px; }
+  .hero-btns { flex-direction: column; }
+  .secteurs-grid { grid-template-columns: repeat(2, 1fr); }
+  .methode-steps { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-mark">PF</div>
+      PF24
+    </a>
+    <div class="nav-links">
+      <a href="#hero">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="#diagnostic">Diagnostic gratuit</a>
+      <a href="#pourquoi">Pourquoi PF24</a>
+      <a href="#offres">Offres</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://wa.me/33756848866?text=Bonjour%20PF24%20QSE,%20je%20souhaite%20obtenir%20des%20informations%20concernant%20mon%20DUERP." target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding:10px 20px;font-size:14px;">💬 WhatsApp</a>
+      <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Demander un devis</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" style="display:none;background:#fff;padding:16px 20px;border-top:1px solid var(--grey-l);">
+    <a href="#hero" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">Accueil</a>
+    <a href="services.html" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">Services</a>
+    <a href="#diagnostic" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">Diagnostic gratuit</a>
+    <a href="#pourquoi" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">Pourquoi PF24</a>
+    <a href="#offres" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">Offres</a>
+    <a href="#faq" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">FAQ</a>
+    <a href="https://wa.me/33756848866?text=Bonjour%20PF24%20QSE,%20je%20souhaite%20obtenir%20des%20informations%20concernant%20mon%20DUERP." target="_blank" rel="noopener" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">💬 WhatsApp</a>
+    <a href="#contact" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">Contact / devis</a>
+    <a href="mentions-legales.html" style="display:block;padding:12px 0;font-weight:600;border-bottom:1px solid var(--grey-l);">Mentions légales</a>
+    <a href="politique-confidentialite.html" style="display:block;padding:12px 0;font-weight:600;">Confidentialité</a>
+    <a href="#diagnostic" class="btn btn-primary" style="margin-top:14px;width:100%;">Commencer le diagnostic</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-pre">⚡ Livraison rapide selon votre activité</div>
+      <h1>Création et mise à jour de votre <span class="accent">DUERP</span><br>simplement</h1>
+      <p class="hero-sub">
+        Évaluez gratuitement votre situation en moins de 3 minutes et obtenez une première lecture de vos priorités de prévention.
+      </p>
+      <div class="hero-btns">
+        <a href="#diagnostic" class="btn btn-green btn-lg">📋 Commencer mon diagnostic gratuit</a>
+        <a href="#contact" class="btn btn-white btn-lg">Demander un devis</a>
+        <a href="https://wa.me/33756848866?text=Bonjour%20PF24%20QSE,%20je%20souhaite%20obtenir%20un%20devis%20pour%20mon%20DUERP." target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">💬 WhatsApp</a>
+      </div>
+      <div class="hero-reassurance">
+        <span class="hero-pill">Diagnostic gratuit</span>
+        <span class="hero-pill">Sans engagement</span>
+        <span class="hero-pill">Adapté TPE/PME</span>
+        <span class="hero-pill">Réalisable à distance</span>
+        <span class="hero-pill">Livraison rapide</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-doc">
+        <div class="hero-doc-title">📄 Diagnostic DUERP</div>
+        <div class="hero-doc-item ok">
+          <span class="hero-doc-icon">✅</span>Unités de travail identifiées
+        </div>
+        <div class="hero-doc-item ok">
+          <span class="hero-doc-icon">✅</span>Risques évalués et cotés
+        </div>
+        <div class="hero-doc-item warn">
+          <span class="hero-doc-icon">⚠️</span>Plan d'actions à compléter
+        </div>
+        <div class="hero-doc-item crit">
+          <span class="hero-doc-icon">❌</span>Actualisation à vérifier
+        </div>
+      </div>
+      <div class="hero-badge-delivered">
+        <span style="font-size:24px;">🚀</span>
+        <div>
+          <div style="font-size:12px;opacity:.8;font-weight:600;">Livraison possible</div>
+          <div>selon votre dossier</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROBLÈME
+     ============================================================ -->
+<section class="section" id="probleme">
+  <div class="container">
+    <span class="section-label">Le contexte</span>
+    <div class="section-title">Le DUERP est obligatoire.<br>Mais personne ne vous a dit comment faire.</div>
+    <p class="section-sub">
+      Dès que vous avez un salarié, vous êtes tenu de rédiger et de tenir à jour un
+      <strong>Document Unique d'Évaluation des Risques Professionnels</strong> (DUERP).
+      En cas de contrôle ou d'accident, l'absence de DUERP engage votre responsabilité.
+    </p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">⏱️</div>
+        <h3>Manque de temps</h3>
+        <p>Entre la gestion quotidienne, les clients et les équipes, le DUERP passe systématiquement en dernier.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🧩</div>
+        <h3>Manque de connaissances</h3>
+        <p>La réglementation est complexe. Identifier les risques, les coter, les prioriser : ce n'est pas votre métier.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">💻</div>
+        <h3>Outils trop compliqués</h3>
+        <p>Les logiciels existants sont conçus pour les grandes entreprises. Trop lourds, trop chers, trop techniques.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">⚖️</div>
+        <h3>Peur de passer à côté d’une obligation</h3>
+        <p>Faire un DUERP incomplet ou obsolète expose parfois plus que de ne rien faire. Vous avez besoin d'une démarche fiable.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🔍</div>
+        <h3>Risques difficiles à identifier</h3>
+        <p>Chaque activité a ses propres risques. Sans méthode structurée, on oublie l'essentiel et on documente l'accessoire.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">📋</div>
+        <h3>Pas de plan d'actions</h3>
+        <p>Avoir un document c'est bien, savoir quoi faire en priorité et comment le démontrer c'est mieux.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOLUTION
+     ============================================================ -->
+<section class="section section-alt" id="solution">
+  <div class="container">
+    <span class="section-label">Notre approche</span>
+    <div class="section-title">Une méthode claire.<br>Des documents exploitables.</div>
+    <div class="solution-grid">
+      <ul class="solution-list">
+        <li>
+          <div class="check">✓</div>
+          <div class="li-text">
+            <strong>Diagnostic gratuit en 3 minutes</strong>
+            <span>Évaluez votre situation sans engagement et obtenez un niveau d’avancement immédiat.</span>
+          </div>
+        </li>
+        <li>
+          <div class="check">✓</div>
+          <div class="li-text">
+            <strong>Analyse personnalisée de votre activité</strong>
+            <span>Chaque secteur a ses risques spécifiques. Votre DUERP est adapté à votre réalité terrain.</span>
+          </div>
+        </li>
+        <li>
+          <div class="check">✓</div>
+          <div class="li-text">
+            <strong>Identification et évaluation des risques</strong>
+            <span>Risques prioritaires cotés selon leur gravité et leur probabilité d'occurrence.</span>
+          </div>
+        </li>
+        <li>
+          <div class="check">✓</div>
+          <div class="li-text">
+            <strong>Liste d’actions de prévention priorisées</strong>
+            <span>Des actions concrètes, classées par priorité, avec les responsables et les délais.</span>
+          </div>
+        </li>
+        <li>
+          <div class="check">✓</div>
+          <div class="li-text">
+            <strong>Documents clairs et exploitables</strong>
+            <span>DUERP, synthèse des risques et plan d'actions de prévention, sans jargon inutile.</span>
+          </div>
+        </li>
+        <li>
+          <div class="check">✓</div>
+          <div class="li-text">
+            <strong>Réalisable entièrement à distance</strong>
+            <span>Pas besoin de déplacement. Le diagnostic et la collecte d'informations se font à votre rythme.</span>
+          </div>
+        </li>
+      </ul>
+      <div class="solution-stat-box">
+        <div class="stat-row">
+          <div class="stat-item">
+            <div class="stat-number">1</div>
+            <div class="stat-label">salarié suffit pour que le DUERP soit obligatoire (article L4121-1 du Code du travail)</div>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <div class="stat-number">Délai</div>
+            <div class="stat-label">confirmé au devis selon l’activité, l’effectif, les unités de travail et les informations disponibles</div>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <div class="stat-number">60+</div>
+            <div class="stat-label">activités courantes couvertes par notre méthode PF24</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DIAGNOSTIC INTERACTIF
+     ============================================================ -->
+<section class="section" id="diagnostic">
+  <div class="container">
+    <span class="section-label">Gratuit · Sans engagement · 3 minutes</span>
+    <div class="section-title" style="text-align:center;">Diagnostic DUERP gratuit</div>
+    <p class="section-sub" style="margin:0 auto;text-align:center;">
+      Répondez à quelques questions pour évaluer votre situation DUERP
+      et recevoir vos priorités d’action personnalisées.
+    </p>
+    <div class="diag-wrapper">
+      <div class="diag-header">
+        <h3>🔍 Diagnostic DUERP</h3>
+        <p>Gratuit · Confidentiel · Résultat immédiat</p>
+      </div>
+      <div class="diag-progress" id="diag-progress-area" style="display:none;">
+        <div class="progress-label">
+          <span id="progress-label">Question 1 / 9</span>
+          <span id="progress-pct">0 %</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      </div>
+      <div class="diag-body">
+
+        <!-- ÉCRAN 0 : START -->
+        <div class="diag-screen active" id="screen-start">
+          <div class="diag-start">
+            <div class="start-icon">📋</div>
+            <h3>Diagnostic DUERP gratuit</h3>
+            <p>Répondez à 9 questions pour situer votre niveau d’avancement et connaître vos priorités d’action. Résultat immédiat, sans engagement.</p>
+            <div class="start-pills">
+              <span class="start-pill">⏱ 3 minutes</span>
+              <span class="start-pill">🔒 Confidentiel</span>
+              <span class="start-pill">📊 Résultat personnalisé</span>
+              <span class="start-pill">💡 Conseils personnalisés</span>
+            </div>
+            <button class="btn btn-primary btn-lg" onclick="diagStart()">Commencer le diagnostic →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 1 : Secteur -->
+        <div class="diag-screen" id="screen-1">
+          <div class="diag-q-label">Question 1 / 9</div>
+          <div class="diag-q-text">Quel est votre secteur d'activité ?</div>
+          <div class="opt-grid cols-2" id="opts-1">
+            <div class="opt-item" data-q="1" data-v="alimentaire" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Boulangerie / Pâtisserie</div>
+            <div class="opt-item" data-q="1" data-v="alimentaire" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Restaurant / Brasserie</div>
+            <div class="opt-item" data-q="1" data-v="commerce" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Salon de coiffure</div>
+            <div class="opt-item" data-q="1" data-v="alimentaire" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Commerce alimentaire</div>
+            <div class="opt-item" data-q="1" data-v="commerce" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Commerce non alimentaire</div>
+            <div class="opt-item" data-q="1" data-v="meca" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Garage automobile</div>
+            <div class="opt-item" data-q="1" data-v="btp" onclick="selectOpt(this,1)"><div class="opt-dot"></div>BTP / Bâtiment</div>
+            <div class="opt-item" data-q="1" data-v="btp" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Électricien / Plombier</div>
+            <div class="opt-item" data-q="1" data-v="btp" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Menuisier / Paysagiste</div>
+            <div class="opt-item" data-q="1" data-v="nettoyage" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Entreprise de nettoyage</div>
+            <div class="opt-item" data-q="1" data-v="bureau" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Bureau / Services</div>
+            <div class="opt-item" data-q="1" data-v="medical" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Cabinet médical / Paramédical</div>
+            <div class="opt-item" data-q="1" data-v="asso" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Association</div>
+            <div class="opt-item" data-q="1" data-v="autre" onclick="selectOpt(this,1)"><div class="opt-dot"></div>Autre activité</div>
+          </div>
+          <div class="diag-nav">
+            <div></div>
+            <button class="btn btn-primary" onclick="diagNext(1)" disabled id="btn-next-1">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 2 : Effectif -->
+        <div class="diag-screen" id="screen-2">
+          <div class="diag-q-label">Question 2 / 9</div>
+          <div class="diag-q-text">Combien de salariés compte votre structure ?</div>
+          <div class="opt-grid" id="opts-2">
+            <div class="opt-item" data-q="2" data-v="0" onclick="selectOpt(this,2)"><div class="opt-dot"></div>Aucun salarié (auto-entrepreneur, bénévoles…)</div>
+            <div class="opt-item" data-q="2" data-v="1-5" onclick="selectOpt(this,2)"><div class="opt-dot"></div>1 à 5 salariés</div>
+            <div class="opt-item" data-q="2" data-v="6-10" onclick="selectOpt(this,2)"><div class="opt-dot"></div>6 à 10 salariés</div>
+            <div class="opt-item" data-q="2" data-v="11-20" onclick="selectOpt(this,2)"><div class="opt-dot"></div>11 à 20 salariés</div>
+            <div class="opt-item" data-q="2" data-v="21-49" onclick="selectOpt(this,2)"><div class="opt-dot"></div>21 à 49 salariés</div>
+            <div class="opt-item" data-q="2" data-v="50+" onclick="selectOpt(this,2)"><div class="opt-dot"></div>50 salariés et plus</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(2)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(2)" disabled id="btn-next-2">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 3 : DUERP existant -->
+        <div class="diag-screen" id="screen-3">
+          <div class="diag-q-label">Question 3 / 9</div>
+          <div class="diag-q-text">Disposez-vous actuellement d'un DUERP ?</div>
+          <div class="opt-grid" id="opts-3">
+            <div class="opt-item" data-q="3" data-v="ok" onclick="selectOpt(this,3)"><div class="opt-dot"></div>✅ Oui, il est à jour</div>
+            <div class="opt-item" data-q="3" data-v="old" onclick="selectOpt(this,3)"><div class="opt-dot"></div>⚠️ Oui, mais il n'est plus à jour</div>
+            <div class="opt-item" data-q="3" data-v="unsure" onclick="selectOpt(this,3)"><div class="opt-dot"></div>🤔 Oui, mais je ne suis pas certain qu’il soit complet ou à jour</div>
+            <div class="opt-item" data-q="3" data-v="no" onclick="selectOpt(this,3)"><div class="opt-dot"></div>❌ Non, je n'en ai pas</div>
+            <div class="opt-item" data-q="3" data-v="unknown" onclick="selectOpt(this,3)"><div class="opt-dot"></div>❓ Je ne sais pas</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(3)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(3)" disabled id="btn-next-3">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 4 : Risques identifiés -->
+        <div class="diag-screen" id="screen-4">
+          <div class="diag-q-label">Question 4 / 9</div>
+          <div class="diag-q-text">Avez-vous déjà identifié les principaux risques de votre activité ?</div>
+          <div class="opt-grid" id="opts-4">
+            <div class="opt-item" data-q="4" data-v="yes" onclick="selectOpt(this,4)"><div class="opt-dot"></div>✅ Oui, clairement</div>
+            <div class="opt-item" data-q="4" data-v="partial" onclick="selectOpt(this,4)"><div class="opt-dot"></div>⚠️ Partiellement</div>
+            <div class="opt-item" data-q="4" data-v="no" onclick="selectOpt(this,4)"><div class="opt-dot"></div>❌ Non</div>
+            <div class="opt-item" data-q="4" data-v="unknown" onclick="selectOpt(this,4)"><div class="opt-dot"></div>❓ Je ne sais pas</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(4)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(4)" disabled id="btn-next-4">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 5 : Types de risques (multi) -->
+        <div class="diag-screen" id="screen-5">
+          <div class="diag-q-label">Question 5 / 9</div>
+          <div class="diag-q-text">Quels risques sont présents dans votre activité ?</div>
+          <div class="diag-q-hint">Sélectionnez toutes les réponses qui s'appliquent.</div>
+          <div class="opt-grid cols-2" id="opts-5">
+            <div class="opt-item multi" data-q="5" data-v="chutes" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Chutes</div>
+            <div class="opt-item multi" data-q="5" data-v="manutention" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Manutention</div>
+            <div class="opt-item multi" data-q="5" data-v="coupures" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Coupures</div>
+            <div class="opt-item multi" data-q="5" data-v="brulures" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Brûlures</div>
+            <div class="opt-item multi" data-q="5" data-v="chimiques" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Produits chimiques</div>
+            <div class="opt-item multi" data-q="5" data-v="machines" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Machines / outils</div>
+            <div class="opt-item multi" data-q="5" data-v="elec" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Électricité</div>
+            <div class="opt-item multi" data-q="5" data-v="incendie" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Incendie</div>
+            <div class="opt-item multi" data-q="5" data-v="bruit" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Bruit</div>
+            <div class="opt-item multi" data-q="5" data-v="ecran" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Travail sur écran</div>
+            <div class="opt-item multi" data-q="5" data-v="rps" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Stress / RPS</div>
+            <div class="opt-item multi" data-q="5" data-v="deplac" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Déplacements</div>
+            <div class="opt-item multi" data-q="5" data-v="isole" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Travail isolé</div>
+            <div class="opt-item multi" data-q="5" data-v="nsp" onclick="selectMulti(this,5)"><div class="opt-dot"></div>Je ne sais pas</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(5)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(5)">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 6 : Difficultés (multi) -->
+        <div class="diag-screen" id="screen-6">
+          <div class="diag-q-label">Question 6 / 9</div>
+          <div class="diag-q-text">Quelles difficultés rencontrez-vous ?</div>
+          <div class="diag-q-hint">Plusieurs choix possibles.</div>
+          <div class="opt-grid" id="opts-6">
+            <div class="opt-item multi" data-q="6" data-v="temps" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Je manque de temps</div>
+            <div class="opt-item multi" data-q="6" data-v="reglem" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Je ne connais pas la réglementation</div>
+            <div class="opt-item multi" data-q="6" data-v="risques" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Je ne sais pas comment identifier les risques</div>
+            <div class="opt-item multi" data-q="6" data-v="rediger" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Je ne sais pas comment rédiger le document</div>
+            <div class="opt-item multi" data-q="6" data-v="majour" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Je ne sais pas comment le mettre à jour</div>
+            <div class="opt-item multi" data-q="6" data-v="outils" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Les outils existants sont trop compliqués</div>
+            <div class="opt-item multi" data-q="6" data-v="deleguer" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Je préfère déléguer</div>
+            <div class="opt-item multi" data-q="6" data-v="jamais" onclick="selectMulti(this,6)"><div class="opt-dot"></div>Je n'ai jamais commencé</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(6)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(6)">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 7 : Événements (multi) -->
+        <div class="diag-screen" id="screen-7">
+          <div class="diag-q-label">Question 7 / 9</div>
+          <div class="diag-q-text">Avez-vous déjà eu une demande ou un événement lié au DUERP ?</div>
+          <div class="diag-q-hint">Plusieurs choix possibles.</div>
+          <div class="opt-grid" id="opts-7">
+            <div class="opt-item multi" data-q="7" data-v="inspection" onclick="selectMulti(this,7)"><div class="opt-dot"></div>Inspection du travail</div>
+            <div class="opt-item multi" data-q="7" data-v="accident" onclick="selectMulti(this,7)"><div class="opt-dot"></div>Accident du travail</div>
+            <div class="opt-item multi" data-q="7" data-v="client" onclick="selectMulti(this,7)"><div class="opt-dot"></div>Demande d'un client ou donneur d'ordre</div>
+            <div class="opt-item multi" data-q="7" data-v="assureur" onclick="selectMulti(this,7)"><div class="opt-dot"></div>Demande d'un assureur</div>
+            <div class="opt-item multi" data-q="7" data-v="salarie" onclick="selectMulti(this,7)"><div class="opt-dot"></div>Demande d'un salarié</div>
+            <div class="opt-item multi" data-q="7" data-v="aucun" onclick="selectMulti(this,7)"><div class="opt-dot"></div>Aucune demande pour l'instant</div>
+            <div class="opt-item multi" data-q="7" data-v="nsp" onclick="selectMulti(this,7)"><div class="opt-dot"></div>Je ne sais pas</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(7)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(7)">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 8 : Intérêt -->
+        <div class="diag-screen" id="screen-8">
+          <div class="diag-q-label">Question 8 / 9</div>
+          <div class="diag-q-text">Si un expert pouvait réaliser ou mettre à jour votre DUERP rapidement, seriez-vous intéressé ?</div>
+          <div class="opt-grid" id="opts-8">
+            <div class="opt-item" data-q="8" data-v="oui-now" onclick="selectOpt(this,8)"><div class="opt-dot"></div>✅ Oui, immédiatement</div>
+            <div class="opt-item" data-q="8" data-v="oui-prob" onclick="selectOpt(this,8)"><div class="opt-dot"></div>👍 Oui, probablement</div>
+            <div class="opt-item" data-q="8" data-v="peut-etre" onclick="selectOpt(this,8)"><div class="opt-dot"></div>🤔 Peut-être</div>
+            <div class="opt-item" data-q="8" data-v="non" onclick="selectOpt(this,8)"><div class="opt-dot"></div>Non merci</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(8)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(8)" disabled id="btn-next-8">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- QUESTION 9 : Délai -->
+        <div class="diag-screen" id="screen-9">
+          <div class="diag-q-label">Question 9 / 9</div>
+          <div class="diag-q-text">Quel est votre délai souhaité ?</div>
+          <div class="opt-grid" id="opts-9">
+            <div class="opt-item" data-q="9" data-v="48h" onclick="selectOpt(this,9)"><div class="opt-dot"></div>⚡ Le plus rapidement possible</div>
+            <div class="opt-item" data-q="9" data-v="semaine" onclick="selectOpt(this,9)"><div class="opt-dot"></div>📅 Dans la semaine</div>
+            <div class="opt-item" data-q="9" data-v="mois" onclick="selectOpt(this,9)"><div class="opt-dot"></div>🗓️ Dans le mois</div>
+            <div class="opt-item" data-q="9" data-v="info" onclick="selectOpt(this,9)"><div class="opt-dot"></div>💬 Je souhaite simplement me renseigner</div>
+          </div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack(9)">← Retour</button>
+            <button class="btn btn-primary" onclick="diagNext(9)" disabled id="btn-next-9">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- ÉCRAN COORDONNÉES -->
+        <div class="diag-screen" id="screen-contact">
+          <div class="diag-q-label">Dernière étape</div>
+          <div class="diag-q-text">Recevez votre résultat personnalisé</div>
+          <p style="font-size:14px;color:var(--grey-t);margin-bottom:20px;">Renseignez vos coordonnées pour recevoir votre analyse et vos recommandations prioritaires.</p>
+          <div class="diag-form">
+            <input class="diag-input" type="text" id="diag-nom" placeholder="Votre nom *" required>
+            <input class="diag-input" type="text" id="diag-entreprise" placeholder="Nom de votre entreprise *" required>
+            <input class="diag-input" type="email" id="diag-email" placeholder="Adresse e-mail *" required>
+            <input class="diag-input optional" type="tel" id="diag-tel" placeholder="Téléphone (facultatif)">
+          </div>
+          <div id="diag-error" style="display:none;color:var(--red);font-size:13.5px;margin-top:10px;font-weight:600;"></div>
+          <div class="diag-nav">
+            <button class="btn-diag-back" onclick="diagBack('contact')">← Retour</button>
+            <button class="btn btn-green btn-lg" onclick="diagSubmit()">Voir mon résultat →</button>
+          </div>
+        </div>
+
+        <!-- ÉCRAN RÉSULTAT -->
+        <div class="diag-screen" id="screen-result">
+          <div class="result-screen">
+            <div class="score-ring" id="score-ring">
+              <svg viewBox="0 0 120 120">
+                <circle class="score-ring-bg" cx="60" cy="60" r="52"/>
+                <circle class="score-ring-fill" id="score-circle" cx="60" cy="60" r="52"
+                  stroke-dasharray="327" stroke-dashoffset="327"/>
+              </svg>
+              <div class="score-ring-text">
+                <span class="score-num" id="result-score">0</span>
+                <span class="score-max">/ 100</span>
+              </div>
+            </div>
+            <div class="result-level" id="result-level">Calcul en cours…</div>
+            <div class="result-sub" id="result-sub"></div>
+            <div class="result-prios" id="result-prios">
+              <h4>Vos priorités d'action</h4>
+              <div id="result-prios-list"></div>
+            </div>
+            <div class="result-estimate" id="result-estimate">
+              <div>
+                <div class="re-label">Niveau de cadrage nécessaire</div>
+                <div class="re-val" id="result-time">—</div>
+              </div>
+              <div style="text-align:right;">
+                <div class="re-label">Avec PF24</div>
+                <div class="re-val" id="result-pf24-time" style="color:var(--green);">Délai confirmé au devis</div>
+              </div>
+            </div>
+            <div class="result-btns">
+              <button class="btn btn-green btn-lg" onclick="goToContact()">🚀 Demander un devis DUERP</button>
+              <button class="btn btn-whatsapp" onclick="openWhatsAppWithDiag()">💬 Envoyer mon diagnostic par WhatsApp</button>
+              <button class="btn btn-outline" onclick="goToContact()">📄 Compléter le formulaire</button>
+              <button class="btn-diag-back" style="margin:8px auto 0;" onclick="diagRestart()">↺ Recommencer le diagnostic</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /diag-body -->
+    </div><!-- /diag-wrapper -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     POURQUOI PF24
+     ============================================================ -->
+<section class="section" id="pourquoi">
+  <div class="container">
+    <span class="section-label">Pourquoi PF24 QSE ?</span>
+    <div class="section-title" style="text-align:center;">Un accompagnement humain, pas un simple modèle automatique</div>
+    <p class="section-sub" style="margin:0 auto;text-align:center;">PF24 QSE vous aide à construire un document compréhensible, utile et adapté à votre réalité de terrain.</p>
+    <div class="problem-grid">
+      <div class="problem-card"><div class="problem-icon">👤</div><h3>Interlocuteur unique</h3><p>Vous échangez avec une personne qui comprend votre activité et vos contraintes.</p></div>
+      <div class="problem-card"><div class="problem-icon">🧭</div><h3>Méthode structurée</h3><p>Identification des unités de travail, dangers, risques, cotation et actions de prévention.</p></div>
+      <div class="problem-card"><div class="problem-icon">📝</div><h3>Document exploitable</h3><p>Un DUERP clair, lisible et utilisable, sans surcharger le dirigeant avec du jargon inutile.</p></div>
+      <div class="problem-card"><div class="problem-icon">🏢</div><h3>Adapté aux TPE et PME</h3><p>Une approche pensée pour les petites structures, les commerces, les artisans et les associations employeuses.</p></div>
+      <div class="problem-card"><div class="problem-icon">🇫🇷</div><h3>Partout en France</h3><p>La collecte d’informations peut se faire à distance, avec un échange clair et guidé.</p></div>
+      <div class="problem-card"><div class="problem-icon">⏱️</div><h3>Gain de temps</h3><p>Vous gardez la maîtrise des informations, PF24 vous aide à structurer rapidement un dossier exploitable.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OFFRES
+     ============================================================ -->
+<section class="section section-alt" id="offres">
+  <div class="container">
+    <span class="section-label">Nos prestations</span>
+    <div class="section-title">Une offre adaptée à votre situation</div>
+    <p class="section-sub">Que vous partiez de zéro ou que vous disposiez déjà d’un document, PF24 QSE vous accompagne dans une démarche claire, adaptée à votre activité et expliquée étape par étape.</p>
+    <div class="offres-grid">
+      <div class="offre-card">
+        <div class="offre-icon">🔄</div>
+        <div class="offre-name">Révision et mise à jour du Document Unique</div>
+        <div class="offre-desc">Pour les structures qui disposent déjà d’un document unique mais doivent l’actualiser, le compléter ou le rendre plus exploitable.</div>
+        <ul class="offre-includes">
+          <li>Analyse de votre document existant</li>
+          <li>Mise à jour des risques, avec risque initial et résiduel</li>
+          <li>Actualisation du plan d'actions de prévention</li>
+          <li>Relecture au regard des obligations applicables au DUERP</li>
+          <li>Livraison en PDF + version Word modifiable</li>
+          <li>Nouvelle version tracée, datée et motivée (conservation 40 ans)</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Demander un devis →</a>
+      </div>
+      <div class="offre-card featured">
+        <div class="offre-badge">⭐ Le plus demandé</div>
+        <div class="offre-icon">📋</div>
+        <div class="offre-name">Création de votre Document Unique</div>
+        <div class="offre-desc">Pour les structures employeuses qui partent de zéro et souhaitent formaliser une première évaluation des risques professionnels.</div>
+        <ul class="offre-includes">
+          <li>Entretien de cadrage et analyse de l’activité</li>
+          <li>Identification des unités de travail</li>
+          <li>Cotation des risques avec grille G×P, risque initial et risque résiduel</li>
+          <li>Plan d’actions de prévention hiérarchisé (suppression → protection collective → EPI)</li>
+          <li>Fiches de poste sécurité et registre de sécurité inclus</li>
+          <li>Registre de mise à disposition et historique des versions (conservation 40 ans)</li>
+          <li>Livraison en PDF + version Word modifiable</li>
+          <li>Délai confirmé au devis selon l’effectif, l’activité et la complexité du dossier</li>
+        </ul>
+        <a href="#contact" class="btn btn-green">Demander un devis →</a>
+      </div>
+      <div class="offre-card">
+        <div class="offre-icon">📅</div>
+        <div class="offre-name">Accompagnement prévention</div>
+        <div class="offre-desc">Pour garder un DUERP vivant et adapté lorsque votre activité, vos locaux, votre matériel ou votre organisation évoluent.</div>
+        <ul class="offre-includes">
+          <li>Point régulier sur les changements d’activité, de locaux, d’équipements ou d’organisation</li>
+          <li>Mise à jour du DUERP lorsque nécessaire</li>
+          <li>Suivi de l’avancement du plan d’actions de prévention</li>
+          <li>Adaptation en cas de nouveau matériel, locaux ou organisation</li>
+          <li>Historique des versions conservé</li>
+          <li>Interlocuteur unique pour faciliter le suivi</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Demander un devis →</a>
+      </div>
+    </div>
+
+    <div style="margin-top:36px;background:var(--white,#fff);border:1px solid #E3E8F0;border-radius:16px;padding:28px 32px;">
+      <div style="font-weight:900;font-size:17px;margin-bottom:6px;">📄 Documents réglementaires complémentaires</div>
+      <p style="font-size:14px;color:var(--grey-t,#5B6472);margin-bottom:14px;">Selon votre situation, ces documents obligatoires peuvent être établis en complément du DUERP (prévus au devis) :</p>
+      <ul style="list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;font-size:14px;">
+        <li>✓ <strong>Plan de prévention</strong> — intervention d’entreprises extérieures (art. R4511-1 et s. du Code du travail)</li>
+        <li>✓ <strong>Protocole de sécurité</strong> — opérations de chargement / déchargement (art. R4515-1 et s.)</li>
+        <li>✓ <strong>Fiches de poste sécurité</strong> — information des salariés (art. L4141-1)</li>
+        <li>✓ <strong>Registre de sécurité</strong> — vérifications périodiques, formations, exercices (art. L4711-1)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MÉTHODE
+     ============================================================ -->
+<section class="section" id="methode">
+  <div class="container">
+    <span class="section-label">Notre méthode</span>
+    <div class="section-title" style="text-align:center;">Simple, rapide, efficace</div>
+    <div class="methode-steps">
+      <div class="methode-step">
+        <div class="step-num">1</div>
+        <h3>Diagnostic gratuit</h3>
+        <p>En 3 minutes, situez votre niveau d’avancement et recevez vos priorités d’action personnalisées.</p>
+      </div>
+      <div class="methode-step">
+        <div class="step-num">2</div>
+        <h3>Analyse de votre activité</h3>
+        <p>Nous analysons votre secteur, vos locaux, vos équipements et vos situations de travail pour identifier les risques principaux.</p>
+      </div>
+      <div class="methode-step">
+        <div class="step-num">3</div>
+        <h3>Création ou mise à jour</h3>
+        <p>Nous élaborons ou actualisons votre DUERP avec une méthode structurée et un plan d’actions clair et exploitable.</p>
+      </div>
+      <div class="methode-step">
+        <div class="step-num">4</div>
+        <h3>Restitution et conseils</h3>
+        <p>Vous recevez un dossier clair, avec les explications nécessaires pour l’utiliser et le faire vivre dans le temps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTEURS
+     ============================================================ -->
+<section class="section section-alt" id="secteurs">
+  <div class="container">
+    <span class="section-label">Secteurs accompagnés</span>
+    <div class="section-title" style="text-align:center;">Adapté à votre métier</div>
+    <p class="section-sub" style="margin:0 auto;text-align:center;">PF24 QSE couvre plus de 60 activités courantes. Chaque dossier est adapté aux risques spécifiques de votre métier et aux informations transmises.</p>
+    <div class="secteurs-grid">
+      <div class="secteur-card"><div class="secteur-icon">🍽️</div><div class="secteur-name">Restaurant</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🥖</div><div class="secteur-name">Boulangerie</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🛍️</div><div class="secteur-name">Commerce</div></div>
+      <div class="secteur-card"><div class="secteur-icon">✂️</div><div class="secteur-name">Coiffure</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🔧</div><div class="secteur-name">Garage</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🏗️</div><div class="secteur-name">BTP</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🧹</div><div class="secteur-name">Nettoyage</div></div>
+      <div class="secteur-card"><div class="secteur-icon">💼</div><div class="secteur-name">Bureau / Services</div></div>
+      <div class="secteur-card"><div class="secteur-icon">⚡</div><div class="secteur-name">Électricien</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🚰</div><div class="secteur-name">Plombier</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🌿</div><div class="secteur-name">Paysagiste</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🚑</div><div class="secteur-name">Transport sanitaire</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🦷</div><div class="secteur-name">Cabinet dentaire</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🏠</div><div class="secteur-name">Agence immobilière</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🏋️</div><div class="secteur-name">Salle de sport</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🤝</div><div class="secteur-name">Association</div></div>
+      <div class="secteur-card"><div class="secteur-icon">🩺</div><div class="secteur-name">Profession libérale</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section" id="faq">
+  <div class="container">
+    <span class="section-label">Questions fréquentes</span>
+    <div class="section-title" style="text-align:center;">Tout ce que vous devez savoir</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Le DUERP est-il vraiment obligatoire ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Oui, le Document Unique d'Évaluation des Risques Professionnels est obligatoire pour tout employeur, dès l'embauche du premier salarié, conformément aux articles L4121-1 à L4121-3 du Code du travail. En cas d'absence, l'employeur s'expose à des sanctions en cas de contrôle ou d'accident du travail.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Qui est concerné par l'obligation DUERP ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Tout employeur de droit privé, quelle que soit la taille de la structure, est concerné dès qu'il emploie au moins un salarié. Cela inclut les artisans, commerçants, restaurateurs, professions libérales, associations employeuses, et toutes les TPE et PME.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>À quelle fréquence le DUERP doit-il être mis à jour ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Le DUERP doit être actualisé lorsqu’une décision d’aménagement important modifie les conditions de santé, de sécurité ou de travail, lorsqu’une nouvelle information concernant un risque est connue, ou lorsque l’activité évolue de manière significative. Pour les entreprises d’au moins 11 salariés, une mise à jour périodique doit également être organisée. PF24 vous aide à identifier le bon moment pour actualiser le document.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Peut-on réaliser le DUERP entièrement à distance ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Oui, c'est tout à fait possible pour la majorité des structures. Nous collectons les informations nécessaires par échange de documents, questionnaire détaillé et échange téléphonique ou visioconférence. Pour certaines activités très spécifiques, une visite terrain peut être envisagée mais n'est pas systématique.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Combien de temps faut-il pour réaliser un DUERP avec PF24 ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Le délai dépend fortement de l’effectif, du nombre d’unités de travail, de l’activité, des documents déjà existants et de la qualité des informations transmises. Une livraison rapide peut être proposée pour les petites structures aux activités simples. Pour les entreprises plus importantes, notamment à partir de 50 salariés, le délai est défini uniquement après cadrage du besoin.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Que contient le document remis ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Vous recevez un dossier complet : DUERP structuré par unités de travail avec grille de cotation, risque initial et risque résiduel, plan d’actions de prévention hiérarchisé, fiches de poste sécurité, registre de sécurité, registre de mise à disposition et historique des versions. Le tout est livré en PDF et en version Word modifiable, afin que vous puissiez le faire vivre. Les documents complémentaires (plan de prévention, protocole de sécurité) sont proposés lorsqu’ils sont pertinents et prévus au devis.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Que se passe-t-il après le diagnostic gratuit ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Vous obtenez immédiatement un résultat indicatif et des priorités d’action. Vos réponses sont ensuite utilisées pour préparer un échange ou un devis adapté à votre situation. Aucun engagement n’est pris lors du diagnostic.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Puis-je demander uniquement une mise à jour de mon DUERP existant ?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Absolument. Si vous disposez déjà d'un DUERP mais qu'il n'est plus à jour ou que vous souhaitez le faire vérifier et compléter, nous proposons une prestation de mise à jour. Envoyez-nous simplement votre document actuel et nous vous indiquons ce qui doit être mis à jour et à quel coût.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     NOTE RESPONSABILITÉ
+     ============================================================ -->
+<section class="section-sm section-alt" id="responsabilite">
+  <div class="container-sm">
+    <div class="card" style="box-shadow:none;">
+      <span class="section-label">Important</span>
+      <p style="font-size:15px;color:var(--grey-t);line-height:1.8;">
+        L'employeur demeure responsable de l'évaluation des risques professionnels et de la mise en œuvre des mesures de prévention. PF24 QSE intervient comme prestataire d'accompagnement dans l'élaboration ou la mise à jour du Document Unique, à partir des informations communiquées par l'entreprise.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <span class="section-label">Contactez-nous</span>
+        <h3>Discutons de votre projet DUERP</h3>
+        <p>Vous pouvez demander un devis par formulaire ou nous écrire directement sur WhatsApp. Pour les entreprises de plus de 50 salariés ou les activités complexes, le délai est confirmé après un premier cadrage.</p>
+        <div class="contact-item"><span class="contact-item-icon">💬</span><a href="https://wa.me/33756848866?text=Bonjour%20PF24%20QSE,%20je%20souhaite%20obtenir%20des%20informations%20concernant%20mon%20DUERP." target="_blank" rel="noopener">WhatsApp : 07 56 84 88 66</a></div>
+        <div class="contact-item"><span class="contact-item-icon">📧</span>contact@pf24qse.fr</div>
+        <div class="contact-item"><span class="contact-item-icon">📞</span>Rappel possible après votre demande</div>
+        <div class="contact-item"><span class="contact-item-icon">📍</span>Intervention possible partout en France</div>
+        <div class="contact-item"><span class="contact-item-icon">💻</span>Réalisation à distance ou sur site</div>
+        <div style="margin-top:28px;">
+          <a href="#diagnostic" class="btn btn-primary">📋 Faire le diagnostic d'abord</a>
+          <a href="https://wa.me/33756848866?text=Bonjour%20PF24%20QSE,%20je%20souhaite%20obtenir%20des%20informations%20concernant%20mon%20DUERP." target="_blank" rel="noopener" class="btn btn-whatsapp" style="margin-left:8px;">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e06b5d6d-88b7-4e1c-a8ee-4f0bc6c36c8b">
+            <input type="hidden" name="subject" value="Nouvelle demande PF24 QSE">
+            <input type="hidden" name="from_name" value="PF24 QSE">
+            <input type="hidden" name="redirect" value="https://pf24qse.fr/merci.html">
+            <input type="checkbox" name="botcheck" style="display:none;">
+            <input type="hidden" name="source" value="Site PF24 QSE">
+            <input type="hidden" name="diagnostic_score" id="form-diagnostic-score" value="">
+            <input type="hidden" name="diagnostic_secteur" id="form-diagnostic-secteur" value="">
+            <input type="hidden" name="diagnostic_effectif" id="form-diagnostic-effectif" value="">
+            <input type="hidden" name="diagnostic_duerp" id="form-diagnostic-duerp" value="">
+            <input type="hidden" name="diagnostic_risques" id="form-diagnostic-risques" value="">
+            <input type="hidden" name="diagnostic_difficultes" id="form-diagnostic-difficultes" value="">
+            <input type="hidden" name="diagnostic_evenements" id="form-diagnostic-evenements" value="">
+            <input type="hidden" name="diagnostic_delai" id="form-diagnostic-delai" value="">
+            <div class="form-row">
+              <input class="input" type="text" name="nom" placeholder="Votre nom *" required>
+              <input class="input" type="text" name="entreprise" placeholder="Votre entreprise *" required>
+            </div>
+            <input class="input" type="email" name="email" placeholder="E-mail *" required>
+            <input class="input" type="tel" name="telephone" placeholder="Téléphone">
+            <textarea class="textarea" name="message" placeholder="Votre message — secteur, nombre de salariés, DUERP existant ou non, délai souhaité…" required></textarea>
+            <button type="submit" class="btn btn-primary btn-lg">Envoyer ma demande →</button>
+          </form>
+          <div class="form-success" id="contact-success">
+            ✅ Message envoyé ! Nous vous répondrons dans les 24 heures.
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--grey-m);margin-top:12px;text-align:center;">Vos données sont traitées de manière confidentielle et ne sont pas partagées avec des tiers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-mark" style="width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;background:#fff;color:#0B1B33;">PF</div>
+          PF24 QSE
+        </div>
+        <p class="footer-desc">La prévention professionnelle, simplifiée.<br><br>PF24 QSE accompagne les TPE, PME, artisans, commerçants et associations employeuses dans la création et la mise à jour de leur DUERP, avec une méthode claire et adaptée à leur activité.</p>
+        <a href="mailto:contact@pf24qse.fr" style="color:rgba(255,255,255,.7);font-size:14px;margin-top:12px;display:block;">✉ contact@pf24qse.fr</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Création du Document Unique</a>
+        <a href="services.html">Révision et mise à jour</a>
+        <a href="services.html">Accompagnement QSE</a>
+        <a href="services.html">Audit prévention</a>
+        <a href="services.html">Accompagnement prévention</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <a href="#hero">Accueil</a>
+        <a href="#diagnostic">Diagnostic gratuit</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PF24 QSE — Tous droits réservés.</p>
+      <div class="footer-legal">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     BOUTON WHATSAPP FLOTTANT
+     ============================================================ -->
+<a class="whatsapp-float" href="https://wa.me/33756848866?text=Bonjour%20PF24%20QSE,%20je%20souhaite%20obtenir%20des%20informations%20concernant%20mon%20DUERP." target="_blank" rel="noopener" aria-label="Contacter PF24 QSE sur WhatsApp">
+  💬 <span class="label">WhatsApp</span><span class="wa-dot"></span>
+</a>
+
+<!-- ============================================================
+     STICKY BAR (mobile)
+     ============================================================ -->
+<div class="sticky-bar" id="sticky-bar">
+  <a href="#diagnostic" class="btn btn-primary" style="flex:1;font-size:14px;">📋 Diagnostic</a>
+  <a href="https://wa.me/33756848866?text=Bonjour%20PF24%20QSE,%20je%20souhaite%20obtenir%20des%20informations%20concernant%20mon%20DUERP." target="_blank" rel="noopener" class="btn btn-whatsapp" style="flex:1;font-size:14px;">💬 WhatsApp</a>
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+/* ============================================================
+   NAVIGATION MOBILE
+   ============================================================ */
+document.getElementById('hamburger').addEventListener('click', function(){
+  var menu = document.getElementById('mobile-menu');
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+});
+
+// Fermer le menu au clic sur un lien
+document.querySelectorAll('#mobile-menu a').forEach(function(a){
+  a.addEventListener('click', function(){ document.getElementById('mobile-menu').style.display = 'none'; });
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+  var form = document.getElementById('contact-form');
+  if (form) form.addEventListener('submit', function(){ updateDiagnosticHiddenFields(); });
+});
+
+/* ============================================================
+   FAQ ACCORDÉON
+   ============================================================ */
+function toggleFaq(el) {
+  var item = el.closest('.faq-item');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
+  if (!isOpen) item.classList.add('open');
+}
+
+/* ============================================================
+   DIAGNOSTIC — ÉTAT
+   ============================================================ */
+var diagAnswers = {};   // { q1:'bureau', q3:'no', ... }
+var diagMulti = {};     // { q5:['chutes','machines'], ... }
+var TOTAL_QUESTIONS = 9;
+
+/* ============================================================
+   DIAGNOSTIC — NAVIGATION
+   ============================================================ */
+function showScreen(id) {
+  document.querySelectorAll('.diag-screen').forEach(function(s){ s.classList.remove('active'); });
+  document.getElementById('screen-' + id).classList.add('active');
+}
+
+function updateProgress(q) {
+  var area = document.getElementById('diag-progress-area');
+  if (q === 'start' || q === 'contact' || q === 'result') {
+    if (q === 'start') { area.style.display = 'none'; return; }
+    area.style.display = 'block';
+    if (q === 'contact') { var n = TOTAL_QUESTIONS; } else { var n = TOTAL_QUESTIONS; }
+    var pct = Math.round((n / TOTAL_QUESTIONS) * 100);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-label').textContent = 'Dernière étape';
+    document.getElementById('progress-pct').textContent = pct + ' %';
+    return;
+  }
+  var num = parseInt(q);
+  area.style.display = 'block';
+  var pct = Math.round(((num - 1) / TOTAL_QUESTIONS) * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-label').textContent = 'Question ' + num + ' / ' + TOTAL_QUESTIONS;
+  document.getElementById('progress-pct').textContent = pct + ' %';
+}
+
+function diagStart() {
+  showScreen(1);
+  updateProgress(1);
+  // Save to localStorage
+  localStorage.setItem('pf24_diag_started', Date.now());
+}
+
+function diagNext(q) {
+  // Validate single-choice
+  var single = ['1','2','3','4','8','9'];
+  if (single.indexOf(String(q)) >= 0 && !diagAnswers['q' + q]) { return; }
+
+  var next = q + 1;
+  if (q === 9) {
+    showScreen('contact');
+    updateProgress('contact');
+  } else {
+    showScreen(next);
+    updateProgress(next);
+  }
+  // Save progress
+  localStorage.setItem('pf24_diag_answers', JSON.stringify(diagAnswers));
+  localStorage.setItem('pf24_diag_multi', JSON.stringify(diagMulti));
+}
+
+function diagBack(q) {
+  if (q === 'contact') { showScreen(9); updateProgress(9); return; }
+  var prev = parseInt(q) - 1;
+  if (prev < 1) { showScreen('start'); updateProgress('start'); return; }
+  showScreen(prev);
+  updateProgress(prev);
+}
+
+function diagRestart() {
+  diagAnswers = {}; diagMulti = {};
+  localStorage.removeItem('pf24_diag_answers');
+  localStorage.removeItem('pf24_diag_multi');
+  document.querySelectorAll('.opt-item.selected').forEach(function(el){ el.classList.remove('selected'); });
+  document.querySelectorAll('.btn[id^="btn-next-"]').forEach(function(b){ b.disabled = true; });
+  showScreen('start');
+  updateProgress('start');
+}
+
+/* ============================================================
+   DIAGNOSTIC — SÉLECTION OPTIONS
+   ============================================================ */
+function selectOpt(el, q) {
+  // Single choice
+  var container = el.closest('.opt-grid');
+  container.querySelectorAll('.opt-item').forEach(function(item){ item.classList.remove('selected'); });
+  el.classList.add('selected');
+  diagAnswers['q' + q] = el.dataset.v;
+  // Enable next
+  var btn = document.getElementById('btn-next-' + q);
+  if (btn) btn.disabled = false;
+  // Save
+  localStorage.setItem('pf24_diag_answers', JSON.stringify(diagAnswers));
+  // Auto-advance on mobile after brief delay
+  setTimeout(function(){ diagNext(q); }, 280);
+}
+
+function selectMulti(el, q) {
+  el.classList.toggle('selected');
+  var key = 'q' + q;
+  if (!diagMulti[key]) diagMulti[key] = [];
+  var val = el.dataset.v;
+  var idx = diagMulti[key].indexOf(val);
+  if (el.classList.contains('selected')) {
+    if (idx < 0) diagMulti[key].push(val);
+  } else {
+    if (idx >= 0) diagMulti[key].splice(idx, 1);
+  }
+  localStorage.setItem('pf24_diag_multi', JSON.stringify(diagMulti));
+}
+
+/* ============================================================
+   DIAGNOSTIC — SOUMISSION & CALCUL SCORE
+   ============================================================ */
+function diagSubmit() {
+  var nom = document.getElementById('diag-nom').value.trim();
+  var entreprise = document.getElementById('diag-entreprise').value.trim();
+  var email = document.getElementById('diag-email').value.trim();
+  var errEl = document.getElementById('diag-error');
+
+  if (!nom || !entreprise || !email) {
+    errEl.textContent = 'Veuillez renseigner votre nom, votre entreprise et votre e-mail.';
+    errEl.style.display = 'block';
+    return;
+  }
+  if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+    errEl.textContent = 'Veuillez entrer une adresse e-mail valide.';
+    errEl.style.display = 'block';
+    return;
+  }
+  errEl.style.display = 'none';
+
+  // Save contact info
+  var contact = { nom: nom, entreprise: entreprise, email: email, tel: document.getElementById('diag-tel').value };
+  localStorage.setItem('pf24_diag_contact', JSON.stringify(contact));
+
+  // --- CAS SPÉCIAL : 0 SALARIÉ — DUERP non obligatoire ---
+  if (diagAnswers.q2 === '0') {
+    displayNoSalarie(contact);
+    return;
+  }
+
+  // --- CALCUL DU SCORE ---
+  var score = 0;
+
+  // Q3 : DUERP existant
+  var q3 = diagAnswers.q3;
+  if (q3 === 'ok')       score += 35;
+  else if (q3 === 'old') score += 15;
+  else if (q3 === 'unsure') score += 10;
+  else if (q3 === 'unknown') score += 5;
+  // 'no' = 0
+
+  // Q4 : Risques identifiés
+  var q4 = diagAnswers.q4;
+  if (q4 === 'yes')     score += 25;
+  else if (q4 === 'partial') score += 15;
+  else if (q4 === 'unknown') score += 5;
+  // 'no' = 0
+
+  // Q6 : Difficultés (moins de difficultés = meilleur score)
+  var diffs = diagMulti.q6 ? diagMulti.q6.length : 0;
+  if (diffs === 0)     score += 20;
+  else if (diffs <= 2) score += 14;
+  else if (diffs <= 4) score += 8;
+  else                 score += 3;
+
+  // Q7 : Événements (aucune pression externe = légèrement mieux)
+  var q7 = diagMulti.q7 || [];
+  var hasAccident = q7.indexOf('accident') >= 0 || q7.indexOf('inspection') >= 0;
+  if (q7.indexOf('aucun') >= 0) score += 10;
+  else if (!hasAccident) score += 6;
+  else score += 2;
+
+  // Plafond à 100
+  score = Math.min(100, Math.max(0, score));
+
+  // Affichage du résultat
+  displayResult(score, contact);
+
+  // Envoi vers Google Sheets (configurer l'URL ci-dessous)
+  sendToGoogleSheets({ contact: contact, answers: diagAnswers, multi: diagMulti, score: score });
+  sendDiagnosticToWeb3Forms({ contact: contact, answers: diagAnswers, multi: diagMulti, score: score });
+}
+
+function displayResult(score, contact) {
+  showScreen('result');
+  updateProgress('result');
+
+  // Score circulaire animé
+  var circle = document.getElementById('score-circle');
+  var circumference = 327;
+  var numEl = document.getElementById('result-score');
+
+  setTimeout(function(){
+    var offset = circumference - (score / 100) * circumference;
+    circle.style.strokeDashoffset = offset;
+
+    var color = score >= 70 ? '#1E9E63' : score >= 40 ? '#E8821C' : '#D63B3B';
+    circle.style.stroke = color;
+
+    // Animation du nombre
+    var start = 0;
+    var duration = 1200;
+    var startTime = null;
+    function animateNum(ts) {
+      if (!startTime) startTime = ts;
+      var prog = Math.min((ts - startTime) / duration, 1);
+      numEl.textContent = Math.round(prog * score);
+      if (prog < 1) requestAnimationFrame(animateNum);
+    }
+    requestAnimationFrame(animateNum);
+  }, 100);
+
+  // Niveau et message
+  var levelEl = document.getElementById('result-level');
+  var subEl = document.getElementById('result-sub');
+  if (score >= 70) {
+    levelEl.textContent = '✅ Situation globalement maîtrisée';
+    levelEl.style.color = '#1E9E63';
+    subEl.textContent = 'Vous avez une bonne base documentaire. Une mise à jour ou une vérification peut suffire pour mieux sécuriser votre démarche.';
+  } else if (score >= 40) {
+    levelEl.textContent = '⚠️ Démarche partielle — actions à engager';
+    levelEl.style.color = '#E8821C';
+    subEl.textContent = 'Votre démarche est amorcée mais incomplète. Des actions prioritaires s\'imposent pour sécuriser votre situation.';
+  } else {
+    levelEl.textContent = '🔴 Situation à régulariser rapidement';
+    levelEl.style.color = '#D63B3B';
+    subEl.textContent = 'Votre situation présente des points de vigilance importants. Un accompagnement rapide est recommandé.';
+  }
+
+  // Priorités
+  var prios = buildPrios(score);
+  var priosList = document.getElementById('result-prios-list');
+  priosList.innerHTML = prios.map(function(p){ return '<div class="result-prio-item">' + p + '</div>'; }).join('');
+
+  // Estimation indicative du délai / cadrage nécessaire
+  var timeEl = document.getElementById('result-time');
+  var pf24TimeEl = document.getElementById('result-pf24-time');
+  var effectif = diagAnswers.q2 || '';
+  if (effectif === '50+') {
+    timeEl.textContent = 'Cadrage préalable indispensable';
+    if (pf24TimeEl) pf24TimeEl.textContent = 'Sur devis après entretien';
+  } else if (effectif === '21-49') {
+    timeEl.textContent = 'Cadrage recommandé';
+    if (pf24TimeEl) pf24TimeEl.textContent = 'Délai confirmé au devis';
+  } else if (effectif === '11-20') {
+    timeEl.textContent = 'Dossier à vérifier';
+    if (pf24TimeEl) pf24TimeEl.textContent = 'Quelques jours ouvrés selon dossier';
+  } else if (score >= 70) {
+    timeEl.textContent = 'Mise à jour légère possible';
+    if (pf24TimeEl) pf24TimeEl.textContent = 'Rapide si dossier simple';
+  } else {
+    timeEl.textContent = 'Création ou reprise à cadrer';
+    if (pf24TimeEl) pf24TimeEl.textContent = 'Délai confirmé au devis';
+  }
+
+  // Stocker résultat
+  localStorage.setItem('pf24_diag_result', JSON.stringify({ score: score, date: new Date().toISOString() }));
+  localStorage.setItem('pf24_diag_full', JSON.stringify({ score: score, answers: diagAnswers, multi: diagMulti, contact: contact, date: new Date().toISOString() }));
+}
+
+function buildPrios(score) {
+  var prios = [];
+  var q3 = diagAnswers.q3;
+  var q4 = diagAnswers.q4;
+
+  if (q3 === 'no' || q3 === 'unknown') prios.push('Créer votre Document Unique d\'Évaluation des Risques Professionnels');
+  else if (q3 === 'old') prios.push('Mettre à jour votre DUERP existant');
+  else if (q3 === 'unsure') prios.push('Faire relire votre DUERP actuel pour vérifier s’il est complet et à jour');
+
+  if (q4 === 'no' || q4 === 'unknown') prios.push('Identifier et évaluer les risques de votre activité');
+  else if (q4 === 'partial') prios.push('Compléter l\'inventaire des risques par unité de travail');
+
+  var diffs = diagMulti.q6 || [];
+  if (diffs.indexOf('deleguer') >= 0 || diffs.indexOf('temps') >= 0) prios.push('Déléguer la réalisation à un expert pour gagner du temps');
+  if (diffs.indexOf('rediger') >= 0) prios.push('Obtenir un document structuré et exploitable pour votre organisation');
+
+  var events = diagMulti.q7 || [];
+  if (events.indexOf('accident') >= 0) prios.push('Mettre à jour votre DUERP suite à l\'accident du travail déclaré');
+  if (events.indexOf('inspection') >= 0) prios.push('Régulariser votre situation suite à la visite de l\'inspection du travail');
+
+  if (prios.length === 0) prios.push('Planifier la prochaine actualisation de votre DUERP si votre activité évolue');
+
+  return prios.slice(0, 4);
+}
+
+/* ============================================================
+   ENVOI DONNÉES (Google Sheets / Webhook)
+   À configurer : remplacer l'URL par votre endpoint Zapier,
+   Google Sheets (via Google Apps Script), Brevo, Airtable, etc.
+   ============================================================ */
+function sendToGoogleSheets(data) {
+  // IMPORTANT : pour collecter réellement les données dans Google Sheets,
+  // remplacez l'URL ci-dessous par l'URL de votre Web App Google Apps Script.
+  // Exemple : var WEBHOOK_URL = 'https://script.google.com/macros/s/XXXXX/exec';
+  var WEBHOOK_URL = '';
+
+  var payload = {
+    date: new Date().toISOString(),
+    nom: (data.contact && data.contact.nom) || '',
+    entreprise: (data.contact && data.contact.entreprise) || '',
+    email: (data.contact && data.contact.email) || '',
+    telephone: (data.contact && data.contact.tel) || '',
+    secteur: (data.answers && data.answers.q1) || '',
+    salaries: (data.answers && data.answers.q2) || '',
+    duerp_existant: (data.answers && data.answers.q3) || '',
+    risques_identifies: (data.answers && data.answers.q4) || '',
+    interet: (data.answers && data.answers.q8) || '',
+    delai: (data.answers && data.answers.q9) || '',
+    resultat_indicatif: data.score || '',
+    difficultes: ((data.multi && data.multi.q6) || []).join(', '),
+    evenements: ((data.multi && data.multi.q7) || []).join(', '),
+    risques_types: ((data.multi && data.multi.q5) || []).join(', ')
+  };
+
+  // Sauvegarde locale de secours : les données ne sont pas perdues côté navigateur.
+  // Pour une vraie collecte centralisée, il faut impérativement configurer WEBHOOK_URL.
+  try {
+    var pending = JSON.parse(localStorage.getItem('pf24_leads_pending') || '[]');
+    pending.push(payload);
+    localStorage.setItem('pf24_leads_pending', JSON.stringify(pending));
+  } catch(e) {}
+
+  if (!WEBHOOK_URL) {
+    console.warn('[PF24] WEBHOOK_URL non configurée : données sauvegardées localement uniquement. Le diagnostic est aussi envoyé via Web3Forms.', payload);
+    return;
+  }
+
+  fetch(WEBHOOK_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).catch(function(err){ console.warn('[PF24] Erreur envoi données :', err); });
+}
+
+
+function buildDiagnosticSummary(data) {
+  data = data || JSON.parse(localStorage.getItem('pf24_diag_full') || '{}');
+  var a = data.answers || {};
+  var m = data.multi || {};
+
+  // Si aucun diagnostic n'a été réalisé, on ne génère pas de bloc vide
+  var hasData = Object.keys(a).length > 0;
+  if (!hasData) return '';
+
+  /* Maps de traduction — codes internes → libellés lisibles */
+  var secteurMap = {
+    'alimentaire':'Boulangerie / Restauration / Commerce alimentaire',
+    'commerce':'Commerce / Salon de coiffure',
+    'meca':'Garage automobile',
+    'btp':'BTP / Bâtiment',
+    'nettoyage':'Entreprise de nettoyage',
+    'bureau':'Bureau / Services',
+    'medical':'Cabinet médical / Paramédical',
+    'asso':'Association',
+    'autre':'Autre activité'
+  };
+  var effectifMap = {
+    '0':'Aucun salarié',
+    '1-5':'1 à 5 salariés',
+    '6-10':'6 à 10 salariés',
+    '11-20':'11 à 20 salariés',
+    '21-49':'21 à 49 salariés',
+    '50+':'50 salariés et plus'
+  };
+  var duerpMap = {
+    'ok':'Oui, à jour',
+    'old':'Oui, mais non à jour',
+    'unsure':'Oui, conformité incertaine',
+    'no':'Non',
+    'unknown':'Ne sait pas'
+  };
+  var risquesMap = {
+    'yes':'Oui, clairement identifiés',
+    'partial':'Partiellement identifiés',
+    'no':'Non identifiés',
+    'unknown':'Ne sait pas'
+  };
+  var risquesTypesMap = {
+    'chutes':'Chutes',
+    'manutention':'Manutention',
+    'coupures':'Coupures',
+    'brulures':'Brûlures',
+    'chimiques':'Produits chimiques',
+    'machines':'Machines / outils',
+    'elec':'Électricité',
+    'incendie':'Incendie',
+    'bruit':'Bruit',
+    'ecran':'Travail sur écran',
+    'rps':'Stress / RPS',
+    'deplac':'Déplacements professionnels',
+    'isole':'Travail isolé',
+    'nsp':'Ne sait pas'
+  };
+  var diffMap = {
+    'temps':'Manque de temps',
+    'reglem':'Méconnaissance de la réglementation',
+    'risques':'Difficultés à identifier les risques',
+    'rediger':'Ne sait pas comment rédiger le document',
+    'majour':'Ne sait pas comment mettre à jour',
+    'outils':'Outils existants trop compliqués',
+    'deleguer':'Préfère déléguer',
+    'jamais':"N'a jamais commencé"
+  };
+  var evenMap = {
+    'inspection':'Inspection du travail',
+    'accident':'Accident du travail',
+    'client':'Demande d\u2019un client / donneur d\u2019ordre',
+    'assureur':'Demande d\u2019un assureur',
+    'salarie':'Demande d\u2019un salarié',
+    'aucun':'Aucune demande pour l\u2019instant',
+    'nsp':'Ne sait pas'
+  };
+  var interetMap = {
+    'oui-now':'Oui, immédiatement',
+    'oui-prob':'Oui, probablement',
+    'peut-etre':'Peut-être',
+    'non':'Non'
+  };
+  var delaiMap = {
+    '48h':'Sous 48 h',
+    'semaine':'Dans la semaine',
+    'mois':'Dans le mois',
+    'info':'Renseignement seulement'
+  };
+
+  function trad(map, keys) {
+    if (!keys) return '';
+    if (Array.isArray(keys)) return keys.map(function(k){ return map[k] || k; }).join(', ');
+    return map[keys] || keys;
+  }
+
+  var lines = ['--- Diagnostic PF24 QSE ---'];
+  if (data.score !== undefined && data.score !== null) lines.push('Score indicatif : ' + data.score + '/100');
+  if (a.q1) lines.push('Secteur : ' + trad(secteurMap, a.q1));
+  if (a.q2) lines.push('Effectif : ' + trad(effectifMap, a.q2));
+  if (a.q3) lines.push('DUERP existant : ' + trad(duerpMap, a.q3));
+  if (a.q4) lines.push('Risques identifiés : ' + trad(risquesMap, a.q4));
+  if (m.q5 && m.q5.length) lines.push('Types de risques : ' + trad(risquesTypesMap, m.q5));
+  if (m.q6 && m.q6.length) lines.push('Difficultés : ' + trad(diffMap, m.q6));
+  if (m.q7 && m.q7.length) lines.push('Événements / demandes : ' + trad(evenMap, m.q7));
+  if (a.q8) lines.push('Intérêt pour une prestation : ' + trad(interetMap, a.q8));
+  if (a.q9) lines.push('Délai souhaité : ' + trad(delaiMap, a.q9));
+  return lines.join('\n');
+}
+
+function updateDiagnosticHiddenFields() {
+  var data = JSON.parse(localStorage.getItem('pf24_diag_full') || '{}');
+  var a = data.answers || {};
+  var m = data.multi || {};
+  var hasData = Object.keys(a).length > 0;
+  var set = function(id, val){ var el = document.getElementById(id); if (el) el.value = val; };
+
+  if (!hasData) {
+    // Pas de diagnostic réalisé : on indique clairement
+    set('form-diagnostic-score', 'Diagnostic non réalisé');
+    set('form-diagnostic-secteur', '');
+    set('form-diagnostic-effectif', '');
+    set('form-diagnostic-duerp', '');
+    set('form-diagnostic-risques', '');
+    set('form-diagnostic-difficultes', '');
+    set('form-diagnostic-evenements', '');
+    set('form-diagnostic-delai', '');
+    return;
+  }
+
+  var effectifMap = {'0':'Aucun salarié','1-5':'1 à 5','6-10':'6 à 10','11-20':'11 à 20','21-49':'21 à 49','50+':'50+'};
+  var duerpMap   = {'ok':'Oui à jour','old':'Oui non à jour','unsure':'Conformité incertaine','no':'Non','unknown':'Ne sait pas'};
+  var risquesMap = {'yes':'Oui','partial':'Partiellement','no':'Non','unknown':'Ne sait pas'};
+  var interetMap = {'oui-now':'Oui immédiatement','oui-prob':'Oui probablement','peut-etre':'Peut-être','non':'Non'};
+  var delaiMap   = {'48h':'Sous 48 h','semaine':'Dans la semaine','mois':'Dans le mois','info':'Renseignement'};
+
+  set('form-diagnostic-score',      (data.score !== undefined && data.score !== null) ? data.score + '/100' : 'Non calculé');
+  set('form-diagnostic-secteur',    a.q1 || '');
+  set('form-diagnostic-effectif',   effectifMap[a.q2] || a.q2 || '');
+  set('form-diagnostic-duerp',      duerpMap[a.q3] || a.q3 || '');
+  set('form-diagnostic-risques',    risquesMap[a.q4] || '');
+  set('form-diagnostic-difficultes',(m.q6 || []).join(', '));
+  set('form-diagnostic-evenements', (m.q7 || []).join(', '));
+  set('form-diagnostic-delai',      delaiMap[a.q9] || a.q9 || '');
+}
+
+function sendDiagnosticToWeb3Forms(data) {
+  // Envoi automatique du diagnostic vers l'e-mail configuré dans Web3Forms.
+  // Cela permet de collecter les réponses même si le visiteur ne remplit pas ensuite le formulaire de contact.
+  try {
+    var fd = new FormData();
+    fd.append('access_key', 'e06b5d6d-88b7-4e1c-a8ee-4f0bc6c36c8b');
+    fd.append('subject', 'Nouveau diagnostic DUERP PF24 QSE');
+    fd.append('from_name', 'PF24 QSE - Diagnostic');
+    fd.append('nom', (data.contact && data.contact.nom) || '');
+    fd.append('entreprise', (data.contact && data.contact.entreprise) || '');
+    fd.append('email', (data.contact && data.contact.email) || '');
+    fd.append('telephone', (data.contact && data.contact.tel) || '');
+    fd.append('message', buildDiagnosticSummary(data));
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
+      .then(function(){ console.log('[PF24] Diagnostic envoyé via Web3Forms.'); })
+      .catch(function(err){ console.warn('[PF24] Envoi Web3Forms impossible :', err); });
+  } catch(e) {
+    console.warn('[PF24] Erreur préparation Web3Forms :', e);
+  }
+}
+
+function openWhatsAppWithDiag() {
+  var contact = JSON.parse(localStorage.getItem('pf24_diag_contact') || '{}');
+  var summary = buildDiagnosticSummary();
+  var intro = 'Bonjour PF24 QSE, je souhaite obtenir un devis pour mon DUERP.\n\n';
+  if (contact.entreprise) intro += 'Entreprise : ' + contact.entreprise + '\n';
+  var url = 'https://wa.me/33756848866?text=' + encodeURIComponent(intro + summary);
+  window.open(url, '_blank');
+}
+
+/* ============================================================
+   FORMULAIRE CONTACT
+   ============================================================ */
+/* submitContact conservé mais inactif — le formulaire soumet directement via web3forms */
+function submitContact(e) {
+  // Fonction non utilisée : le formulaire contact envoie via web3forms (action= du form)
+  // Ne pas appeler e.preventDefault() pour ne pas bloquer l'envoi
+}
+
+/* ============================================================
+   PRÉ-REMPLISSAGE formulaire contact depuis diagnostic
+   ============================================================ */
+/* Pré-remplissage du formulaire — utilise name= pour éviter les champs cachés */
+function diagContactPF24() {
+  var contact = JSON.parse(localStorage.getItem('pf24_diag_contact') || '{}');
+  var result  = JSON.parse(localStorage.getItem('pf24_diag_result')  || '{}');
+  if (!contact.nom) return;
+  var fNom   = document.querySelector('#contact-form input[name="nom"]');
+  var fEnt   = document.querySelector('#contact-form input[name="entreprise"]');
+  var fEmail = document.querySelector('#contact-form input[name="email"]');
+  var fTel   = document.querySelector('#contact-form input[name="telephone"]');
+  var fMsg   = document.querySelector('#contact-form textarea[name="message"]');
+  if (fNom)   fNom.value   = contact.nom        || '';
+  if (fEnt)   fEnt.value   = contact.entreprise  || '';
+  if (fEmail) fEmail.value = contact.email       || '';
+  if (fTel)   fTel.value   = contact.tel         || '';
+  if (fMsg) {
+    var diagBlock = buildDiagnosticSummary();
+    if (result.score !== undefined && result.score !== null) {
+      fMsg.value = 'Bonjour PF24 QSE, suite à mon diagnostic (score : ' + result.score + '/100), je souhaite obtenir un devis pour mon DUERP.' + (diagBlock ? '\n\n' + diagBlock : '');
+    } else if (diagBlock) {
+      fMsg.value = 'Bonjour PF24 QSE, je souhaite obtenir un devis pour mon DUERP.\n\n' + diagBlock;
+    } else {
+      fMsg.value = ''; // Laisser vide si aucun diagnostic : le visiteur écrit son propre message
+    }
+  }
+  updateDiagnosticHiddenFields();
+}
+
+/* Scroll doux vers #contact + préremplissage */
+function goToContact() {
+  diagContactPF24();
+  var el = document.getElementById('contact');
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+/* Cas 0 salarié — DUERP non obligatoire */
+function displayNoSalarie(contact) {
+  showScreen('result');
+  updateProgress('result');
+  var circle = document.getElementById('score-circle');
+  if (circle) { circle.style.strokeDashoffset = '327'; circle.style.stroke = '#8A95A3'; }
+  document.getElementById('result-score').textContent = 'N/A';
+  var smax = document.querySelector('.score-max');
+  if (smax) smax.textContent = '';
+  var levelEl = document.getElementById('result-level');
+  levelEl.textContent = 'ℹ️ DUERP non obligatoire dans votre situation actuelle';
+  levelEl.style.color = '#1E9E63';
+  document.getElementById('result-sub').textContent =
+    "Vous avez indiqué ne pas employer de salarié. En l'état actuel, le DUERP n'est pas obligatoire. Toutefois, certaines obligations de prévention peuvent s'appliquer selon votre activité ou votre secteur.";
+  document.getElementById('result-prios-list').innerHTML =
+    '<div class="result-prio-item">Vérifier vos obligations de prévention selon votre statut et votre secteur</div>' +
+    '<div class="result-prio-item">Anticiper vos obligations en cas de premier recrutement</div>';
+  var est = document.getElementById('result-estimate');
+  if (est) est.style.display = 'none';
+  document.querySelector('.result-btns').innerHTML =
+    '<button class="btn btn-green btn-lg" onclick="goToContact()">💬 Vérifier mes autres obligations QSE</button>' +
+    '<button class="btn-diag-back" style="margin:8px auto 0;" onclick="diagRestart()">↺ Recommencer le diagnostic</button>';
+  localStorage.setItem('pf24_diag_result', JSON.stringify({ score: null, zeroSalarie: true, date: new Date().toISOString() }));
+}
+</script>
+
+</body>
+</html>
