@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap.xml — PF24 QSE | https://pf24qse.fr -->
+<!-- Soumettez ce sitemap dans Google Search Console après connexion -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil — priorité maximale -->
+  <url>
+    <loc>https://pf24qse.fr/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Page services -->
+  <url>
+    <loc>https://pf24qse.fr/services.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mentions légales — priorité basse, noindex dans la page -->
+  <url>
+    <loc>https://pf24qse.fr/mentions-legales.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <!-- Politique de confidentialité — priorité basse, noindex dans la page -->
+  <url>
+    <loc>https://pf24qse.fr/politique-confidentialite.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
